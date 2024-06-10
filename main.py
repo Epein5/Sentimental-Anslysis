@@ -6,7 +6,7 @@ from tensorflow.keras.layers import TextVectorization
 
 MAX_FEATURES = 200000 # number of words in the vocab
 
-df = pd.read_csv(os.path.join('jigsaw-toxic-comment-classification-challenge','train.csv', 'train.csv'))
+df = pd.read_csv(os.path.join('Datasets/jigsaw-toxic-comment-classification-challenge','train.csv', 'train.csv'))
 X = df['comment_text']
 y = df[df.columns[2:]].values
 
